@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>리슬 글로벌 수출 인포그래픽</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <p class="eyebrow">LEESLE GLOBAL SALES MAP</p>
+        <h1>현재 53개국 한복 수출 판매 기록</h1>
+        <p class="subtitle">
+          기존 구매고객과 브랜드 팬덤을 기반으로 글로벌 판매국 및 시장 다변화를 진행 중입니다.
+        </p>
+      </header>
+
+      <section class="map-wrap" aria-label="리슬 수출 국가 지도">
+        <div id="map" role="img" aria-label="리슬 53개국 수출 판매 지도"></div>
+        <aside id="countryPreview" class="preview" aria-live="polite">
+          <p class="preview-empty">지도 위 핀에 마우스를 올리면 국가 정보(인구·국민소득)가 표시되고, 국기/배너 클릭 시 위키백과로 이동합니다.</p>
+        </aside>
+      </section>
+
+      <section class="flags-section" aria-label="전체 수출국 국기 목록">
+        <h2>수출국 전체 국기</h2>
+        <div id="flagGrid" class="flag-grid"></div>
+      </section>
+    </main>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
